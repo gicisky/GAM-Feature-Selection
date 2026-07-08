@@ -49,7 +49,7 @@ This repository accompanies the manuscript submitted to **Applied Soft Computing
 | Macro Redundancy | 0.2036 | 0.2967 | **0.2660** |
 | ΔRed vs GAM-λ0 | — | — | **−10.33%** |
 
-GAM improves the macro-average fold-safe accuracy from **0.7672** to **0.8236**, corresponding to a **5.64 percentage-point gain** over Bare optimizers. The λ-guided redundancy penalty further reduces redundancy by **10.33%** relative to GAM-λ0 while preserving the same accuracy tier.
+  GAM improves the macro-average fold-safe accuracy from **0.7672** to **0.8236**, corresponding to a **5.64 percentage-point gain** over Bare optimizers. The λ-guided redundancy penalty further reduces redundancy by **10.33%** relative to GAM-λ0 while preserving the same accuracy tier.
 
 ---
 
