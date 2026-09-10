@@ -14,7 +14,7 @@
 ## Graphical Abstract
 
 <p align="center">
-  <img src="docs/FIGURES/graphical_abstract.png" width="950">
+  <img src="docs/graphical_abstract.png" width="950">
 </p>
 
 <p align="center">
