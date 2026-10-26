@@ -1,0 +1,270 @@
+{"dataset": "colon", "base": "GA", "lambda": 0.4, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3756782788700408, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.2, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3533978270565412, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.2, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.30867044310356534, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.4, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.29292033818376195, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.0, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.33363257160366067, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.0, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.36309248737913535, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.2, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3475694330055386, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.0, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3488464345576647, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.6, "run": 0, "D": 2000, "k": 100, "acc": 0.9230769230769231, "red": 0.36454487618080855, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.8, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3553185145328164, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.5, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3795228876873912, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.6, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3093089541692279, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.4, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3737243487251862, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.5, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3653353635837623, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.5, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3071244577869134, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.6, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.35242924471298315, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.8, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3059803818518733, "n_sel": 100}
+{"dataset": "colon", "base": "GA", "lambda": 0.8, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.35369497905346237, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.0, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3281356442029037, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.0, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3818015933624866, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.2, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.31127867957776467, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.0, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.34864812937377465, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.2, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3885393321413559, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.2, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.33700577983266294, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.4, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.36979783722602455, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.4, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3257445840841818, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.4, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.33294084488677983, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.5, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.35552333602100367, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.5, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.31397766220992085, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.5, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3690741665048234, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.6, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.32260055082715433, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.6, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3585500603447204, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.6, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.35248874066644276, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.8, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3518904202735242, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.8, "run": 1, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.307055520199602, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.0, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3096524088021028, "n_sel": 100}
+{"dataset": "colon", "base": "DE", "lambda": 0.8, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3553722905786338, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.0, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3735509514754211, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.0, "run": 0, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.35726411390550833, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.2, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.36775901189692617, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.2, "run": 1, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3167052843509723, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.2, "run": 2, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.351520902915874, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.4, "run": 2, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.34890992915259217, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.4, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.35793545436553664, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.4, "run": 1, "D": 2000, "k": 100, "acc": 0.6923076923076923, "red": 0.3137355996700624, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.5, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.37253946462663856, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.5, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3162434357959456, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.5, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.35871713651601156, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.6, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3642835787468776, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.6, "run": 1, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.3127410215339047, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.8, "run": 0, "D": 2000, "k": 100, "acc": 0.8461538461538461, "red": 0.35988229512450814, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.8, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.3689973265718185, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.8, "run": 1, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.29400385932804307, "n_sel": 100}
+{"dataset": "colon", "base": "AO", "lambda": 0.6, "run": 2, "D": 2000, "k": 100, "acc": 0.7692307692307693, "red": 0.34669140858422537, "n_sel": 100}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.0, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2740869572072276, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.2, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.28111918359832994, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.0, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.4, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2595769678448059, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.2, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.0, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.4, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.2, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.4, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.5, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2733245107428565, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.6, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2773137539163618, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.5, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.5, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.6, "run": 0, "D": 5469, "k": 273, "acc": 0.9375, "red": 0.2953090068376691, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.8, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.6, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.5, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.4, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.4, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3048814515357646, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.6, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.260259440025437, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.5, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2687977517789569, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.6, "run": 0, "D": 5469, "k": 273, "acc": 0.9375, "red": 0.30543855943398945, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.5, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.31900003564226564, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.4, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.8, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.25747242845975243, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.2, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2661815277183735, "n_sel": 273}
+{"dataset": "DLBCL", "base": "GA", "lambda": 0.8, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.2, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.0, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.0, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2837786482528046, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.0, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3285627166902114, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.2, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.3295817471572971, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.6, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.8, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.8, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.26758167684154277, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.0, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.27357653471059445, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.0, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.27091252831158996, "n_sel": 273}
+{"dataset": "DLBCL", "base": "DE", "lambda": 0.8, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.31031898046127626, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.2, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2598597685545977, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.0, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.2, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.291134065138598, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.2, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.4, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.25548639872248785, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.5, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.27758023738591153, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.4, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.28082723999888554, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.5, "run": 0, "D": 5469, "k": 273, "acc": 0.9375, "red": 0.311846828255629, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.4, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.5, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.6, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2667739994936421, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.6, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.24506175670498653, "n_sel": 273}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.0, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.18763804321027824, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.0, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.18953405822923045, "n_sel": 286}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.6, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.8, "run": 1, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2705992907758465, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.8, "run": 0, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2544977213131803, "n_sel": 273}
+{"dataset": "DLBCL", "base": "AO", "lambda": 0.8, "run": 2, "D": 5469, "k": 273, "acc": 1.0, "red": 0.2928321744865366, "n_sel": 273}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.0, "run": 2, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.17398491611646236, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.2, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1822098123303604, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.2, "run": 1, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.1853112274942131, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.5, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17568804211857125, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.2, "run": 2, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.17922670979111854, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.4, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17155980598824624, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.4, "run": 2, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17191388683714517, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.4, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.17444699662633287, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.5, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1740363129472606, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.5, "run": 2, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.17267349558877357, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.6, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17041824713674797, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.6, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1728716482620805, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.6, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1713462087094481, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.8, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.16914203037648104, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.8, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1711441491323637, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "GA", "lambda": 0.8, "run": 0, "D": 5726, "k": 286, "acc": 0.5, "red": 0.16889136964098703, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.0, "run": 0, "D": 5726, "k": 286, "acc": 0.5, "red": 0.19493395354424803, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.0, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.18906428349702606, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.0, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1893044389862015, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.2, "run": 2, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.17719324572770281, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.2, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.18372892042127015, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.4, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.17626256198851217, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.4, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1811053321787219, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.2, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1882402361226309, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.4, "run": 2, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.1659795707282544, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.5, "run": 0, "D": 5726, "k": 286, "acc": 0.5, "red": 0.16776036205489053, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.5, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1723415864042694, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.5, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1732746162325047, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.6, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.16414693104031028, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.6, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1714418974116013, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.6, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.16620834676380686, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.8, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.16793805196199396, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.8, "run": 1, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.1690179782156302, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "DE", "lambda": 0.8, "run": 2, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.1655303138265169, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.0, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.19678467046061623, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.0, "run": 1, "D": 5726, "k": 286, "acc": 0.5, "red": 0.18457052493454568, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.0, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.19379680161019822, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.2, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.18334489755754874, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.2, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17775757096014486, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.2, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.18647750557012402, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.4, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.18330384513221146, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.4, "run": 1, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.1794191497526664, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.4, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.17533432275737892, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.5, "run": 0, "D": 5726, "k": 286, "acc": 0.5833333333333334, "red": 0.17304779259605937, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.5, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17103983217098626, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.5, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.1780190272331497, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.6, "run": 2, "D": 5726, "k": 286, "acc": 0.3333333333333333, "red": 0.17064826786248724, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.6, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17539082302437636, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.6, "run": 0, "D": 5726, "k": 286, "acc": 0.5, "red": 0.16926644429765533, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.8, "run": 0, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.16863682769577232, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.8, "run": 1, "D": 5726, "k": 286, "acc": 0.4166666666666667, "red": 0.17099190416760643, "n_sel": 286}
+{"dataset": "9_Tumors", "base": "AO", "lambda": 0.8, "run": 2, "D": 5726, "k": 286, "acc": 0.5, "red": 0.16387744563750956, "n_sel": 286}
+{"dataset": "arcene", "base": "GA", "lambda": 0.0, "run": 2, "D": 10000, "k": 500, "acc": 0.775, "red": 0.36493217592128485, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.2, "run": 0, "D": 10000, "k": 500, "acc": 0.875, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.0, "run": 1, "D": 10000, "k": 500, "acc": 0.75, "red": 0.35041860962636867, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.2, "run": 1, "D": 10000, "k": 500, "acc": 0.775, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.2, "run": 2, "D": 10000, "k": 500, "acc": 0.75, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.0, "run": 0, "D": 10000, "k": 500, "acc": 0.875, "red": 0.34483457902080944, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.4, "run": 0, "D": 10000, "k": 500, "acc": 0.825, "red": 0.3056791369191408, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.4, "run": 1, "D": 10000, "k": 500, "acc": 0.75, "red": 0.33899287909287584, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.4, "run": 2, "D": 10000, "k": 500, "acc": 0.8, "red": 0.3048959786386064, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.5, "run": 2, "D": 10000, "k": 500, "acc": 0.775, "red": 0.2930193299621069, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.5, "run": 0, "D": 10000, "k": 500, "acc": 0.8, "red": 0.3090066881104899, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.6, "run": 0, "D": 10000, "k": 500, "acc": 0.875, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.5, "run": 1, "D": 10000, "k": 500, "acc": 0.75, "red": 0.31113160705411064, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.6, "run": 1, "D": 10000, "k": 500, "acc": 0.75, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.6, "run": 2, "D": 10000, "k": 500, "acc": 0.75, "red": 0.26310330053388087, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.8, "run": 0, "D": 10000, "k": 500, "acc": 0.8, "red": 0.27306610506375684, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.8, "run": 1, "D": 10000, "k": 500, "acc": 0.775, "red": 0.30517411262457905, "n_sel": 500}
+{"dataset": "arcene", "base": "GA", "lambda": 0.8, "run": 2, "D": 10000, "k": 500, "acc": 0.85, "red": 0.27858364754331116, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.0, "run": 1, "D": 10000, "k": 500, "acc": 0.775, "red": 0.40030504378094117, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.0, "run": 2, "D": 10000, "k": 500, "acc": 0.825, "red": 0.2733914820245975, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.0, "run": 0, "D": 10000, "k": 500, "acc": 0.85, "red": 0.38717593782553517, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.2, "run": 1, "D": 10000, "k": 500, "acc": 0.8, "red": 0.0, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.2, "run": 2, "D": 10000, "k": 500, "acc": 0.85, "red": 0.30828013790949627, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.2, "run": 0, "D": 10000, "k": 500, "acc": 0.85, "red": 0.3694918771023622, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.4, "run": 0, "D": 10000, "k": 500, "acc": 0.825, "red": 0.34519999920474603, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.4, "run": 1, "D": 10000, "k": 500, "acc": 0.8, "red": 0.3427943114585331, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.4, "run": 2, "D": 10000, "k": 500, "acc": 0.85, "red": 0.32501111270689104, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.5, "run": 0, "D": 10000, "k": 500, "acc": 0.85, "red": 0.33322638283075623, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.5, "run": 1, "D": 10000, "k": 500, "acc": 0.775, "red": 0.3436720013903253, "n_sel": 500}
+{"dataset": "arcene", "base": "DE", "lambda": 0.5, "run": 2, "D": 10000, "k": 500, "acc": 0.825, "red": 0.2992119464116312, "n_sel": 500}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.4, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5620854153816726, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.0, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5702618750073042, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.0, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5772145397523987, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.2, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5602407220909491, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.4, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5427582082936391, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.4, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5441837834452922, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.5, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5499619542376759, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.2, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5445729861711386, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.2, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5764998951641181, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.0, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5658335435958964, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.5, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5582090329764889, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.5, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5293504811510243, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.6, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5690467374479928, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.8, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5502186510512468, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.8, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5135448606220032, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.6, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5235487603657853, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.8, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5214066469818655, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "GA", "lambda": 0.6, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.519909431808067, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.0, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5889797278931477, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.0, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5833353030410686, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.0, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5836237244903845, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.2, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5789827767610745, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.2, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5246210028194067, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.4, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.4852992522378109, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.2, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.7, "red": 0.5274786253978639, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.4, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5684576605955788, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.4, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5344244101647541, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.5, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5755358675910479, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.5, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.4871528904203567, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.5, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5540843310392943, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.6, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.4750255007983047, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.6, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5355882952679427, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.8, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5226533645602927, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.8, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.4399617076873006, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.6, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5219306841902192, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.0, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5695310009462374, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.0, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5662427617235869, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "DE", "lambda": 0.8, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.466348838673693, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.0, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5537631940824114, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.2, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5700273873172016, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.2, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5659878919968389, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.2, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5648568243040402, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.4, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5548508760093886, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.4, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5648375443489072, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.4, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5453007026117026, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.5, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5782848651937554, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.5, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5922870588292868, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.5, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5431538631807717, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.6, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.5374277835630491, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.6, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 1.0, "red": 0.5545862571628102, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.6, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5341484890854689, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.8, "run": 0, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.9, "red": 0.477489636964126, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.8, "run": 1, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5676040416494386, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "Brain_Tumor_2", "base": "AO", "lambda": 0.8, "run": 2, "D_orig": 10368, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.5166943226119165, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.6, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.30891940372979143, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.6, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.775, "red": 0.3852624277261428, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.6, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.39538272297944566, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.8, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.875, "red": 0.38083817000785153, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.8, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.3116808667680004, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "DE", "lambda": 0.8, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.38929239815177324, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.0, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.775, "red": 0.3744641837086374, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.0, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.3624950540241011, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.0, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.34938915392191217, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.2, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.3594514611296534, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.2, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.7, "red": 0.38795617771003643, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.2, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.3235021413645945, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.4, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.8, "red": 0.0, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.4, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.3571312605215509, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.4, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.32122690237443646, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.5, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.36424182032570895, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.5, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.324016274591606, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.5, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.75, "red": 0.3850514097811561, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.6, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.3496947836260722, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.6, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.775, "red": 0.32609253174462854, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.6, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.0, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.8, "run": 0, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.825, "red": 0.3523285692512705, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.8, "run": 2, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.775, "red": 0.3036570850681336, "n_sel": 200, "prefilter": "MI-top-5000"}
+{"dataset": "arcene", "base": "AO", "lambda": 0.8, "run": 1, "D_orig": 10000, "D_reduced": 5000, "k": 200, "acc": 0.775, "red": 0.3371521022965374, "n_sel": 200, "prefilter": "MI-top-5000"}
