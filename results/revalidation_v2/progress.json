@@ -1,11 +1,11 @@
 {
-  "generated_unix": 1793405596.697925,
-  "planned_tasks": 1524,
-  "completed_tasks": 1524,
-  "completed_folds": 5208,
+  "generated_unix": 1793423720.063754,
+  "planned_tasks": 1873,
+  "completed_tasks": 1873,
+  "completed_folds": 6953,
   "error_tasks": 0,
   "planned_by_experiment": {
-    "main": 776,
+    "main": 1125,
     "E10_matched": 45,
     "E7": 72,
     "lambda": 270,
@@ -17,7 +17,7 @@
   "completed_by_experiment": {
     "lambda": 270,
     "independent": 63,
-    "main": 776,
+    "main": 1125,
     "E4": 100,
     "filter_guided": 126,
     "convergence": 72,

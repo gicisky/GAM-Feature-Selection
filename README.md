@@ -47,38 +47,38 @@ This repository accompanies the manuscript submitted to **Applied Soft Computing
 
 | Metric | Bare | GAM-λ0 | GAM λ=0.6 |
 |--------|-----:|-------:|----------:|
-| Macro Accuracy | 0.7672 | 0.8168 | **0.8236** |
-| Macro Redundancy (finite-pair) | 0.2139 | 0.3018 | **0.2718** |
-| ΔRed vs GAM-λ0 | — | — | **−9.96%** |
+| Macro Accuracy | 0.7706 | 0.8179 | **0.8253** |
+| Macro Redundancy (finite-pair) | 0.2132 | 0.2992 | **0.2685** |
+| ΔRed vs GAM-λ0 | — | — | **−10.28%** |
 
-GAM improves the macro-average fold-safe accuracy from **0.7672** to **0.8236**, corresponding to a **5.64 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **9.96%** relative to GAM-λ0 while preserving the same accuracy tier. These figures come from the fold-safe revalidation (see [Revalidation](#revalidation)); redundancy uses the finite-pair convention defined there.
+GAM improves the macro-average fold-safe accuracy from **0.7706** to **0.8253**, corresponding to a **5.46 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **10.28%** relative to GAM-λ0 while preserving the same accuracy tier. These figures come from the fold-safe revalidation (see [Revalidation](#revalidation)); redundancy uses the finite-pair convention defined there.
 
 ---
 
 ## Revalidation
 
-The main benchmark and its supporting experiments were **revalidated** after a pre-submission code–data audit identified three implementation issues (SSA λ-invariance, a crossover wrapper that swallowed `gen`/`max_gen`, and an AO/POA/TSO `gen=T` call). The fixes are applied in place in `code/` and `experiments/`, and the full revalidation pipeline lives in [`experiments/revalidation_v2/`](experiments/revalidation_v2/README.md), with raw results under [`results/revalidation_v2/`](results/revalidation_v2/).
+The main benchmark and its supporting experiments were **revalidated** after a pre-submission code–data audit identified four implementation issues (SSA λ-invariance, a crossover wrapper that swallowed `gen`/`max_gen`, an AO/POA/TSO `gen=T` call, and a CSV first-row misread that dropped one sample per dataset). The fixes are applied in place in `code/` and `experiments/`, and the full revalidation pipeline lives in [`experiments/revalidation_v2/`](experiments/revalidation_v2/README.md), with raw results under [`results/revalidation_v2/`](results/revalidation_v2/).
 
-The revalidation reruns 1524 main-queue tasks + 60 component tasks with **0 errors** and confirms the manuscript's conclusions:
+The revalidation reruns 1873 main-queue tasks + 60 component tasks with **0 errors** and confirms the manuscript's conclusions:
 
 | Test | Statistic |
 |------|-----------|
-| Friedman (Bare / GAM-λ0 / GAM) | χ² = 26.53, **p = 1.73 × 10⁻⁶** |
+| Friedman (Bare / GAM-λ0 / GAM) | χ² = 26.27, **p = 1.97 × 10⁻⁶** |
 | Exact paired Wilcoxon, Bare vs GAM | **p = 6.1 × 10⁻⁵** |
-| Exact paired Wilcoxon, GAM-λ0 vs GAM | **p = 0.0015** |
+| Exact paired Wilcoxon, GAM-λ0 vs GAM | **p = 0.0040** |
 
-The accuracy gain (+5.64 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (≈ −10% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the mean when any pair was undefined) was replaced by the finite-pair convention.
+The accuracy gain (+5.46 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (−10.28% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the mean when any pair was undefined) was replaced by the finite-pair convention.
 
 The revalidation also replaces the old coarse three-arm ablation (`Bare` / `GAM-λ0` / `GAM`) with a **finer component ablation** that isolates each GAM mechanism on the *same* GA backbone — the earlier ablation compared distinct backbones, so it could not attribute the gain to any single component:
 
 | Group | Components | Accuracy | Redundancy |
 |-------|-----------|---------:|-----------:|
-| A | uniform init + random crossover | 0.7130 | 0.2467 |
-| B | + HMRF top-pool init | 0.7459 | 0.2740 |
-| C | + relevance-guided crossover (λ=0) | 0.7506 | 0.2809 |
-| D | + λ=0.6 penalty | 0.7546 | 0.2695 |
+| A | uniform init + random crossover | 0.7212 | 0.2463 |
+| B | + HMRF top-pool init | 0.7478 | 0.2704 |
+| C | + relevance-guided crossover (λ=0) | 0.7601 | 0.2768 |
+| D | + λ=0.6 penalty | 0.7719 | 0.2675 |
 
-The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +3.3 pp); the relevance-guided crossover (+0.5 pp) and the λ penalty (+0.4 pp) contribute less, with λ's main effect being the redundancy reduction (C→D). See [`experiments/revalidation_v2/component_ablation.py`](experiments/revalidation_v2/component_ablation.py).
+The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +2.7 pp); the relevance-guided crossover (+1.2 pp) and the λ penalty (+1.2 pp) contribute less, with λ's main effect being the redundancy reduction (C→D). See [`experiments/revalidation_v2/component_ablation.py`](experiments/revalidation_v2/component_ablation.py).
 
 ---
 
@@ -312,7 +312,7 @@ Representative datasets include:
 | 9_Tumors | 60 | 5,726 |
 | Brain_Tumor1 | 90 | 5,920 |
 | arcene | 200 | 10,000 |
-| Brain_Tumor_2 | 49 | 10,368 |
+| Brain_Tumor_2 | 50 | 10,368 |
 | Lung | 202 | 12,601 |
 | Prostate | 102 | 12,600 |
 | CrohnDisease | 127 | 22,283 |

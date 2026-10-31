@@ -13,7 +13,7 @@ allsummary={}
 for exp,path in sources.items():
  rows=load_jsonl(path);output=[];foldout=[]
  for ds in sorted(set(r['dataset'] for r in rows)):
-  dsrows=[r for r in rows if r['dataset']==ds];file=dsrows[0]['dataset_file'];p=DATA/file;d=pd.read_csv(p);X=d.iloc[:,:-1].to_numpy(dtype=float);y=LabelEncoder().fit_transform(d.iloc[:,-1]);maxerr=0
+  dsrows=[r for r in rows if r['dataset']==ds];file=dsrows[0]['dataset_file'];p=DATA/file;d=pd.read_csv(p,header=None);X=d.iloc[:,:-1].to_numpy(dtype=float);y=LabelEncoder().fit_transform(d.iloc[:,-1]);maxerr=0
   for r in dsrows:
    reds=[];metrics=[];outer=StratifiedKFold(r['outer_folds'],shuffle=True,random_state=20260713+17*r['run']+(int(r['alpha']*1000) if exp=='E10' else 0))
    for fi,(tr,te) in enumerate(outer.split(X,y)):

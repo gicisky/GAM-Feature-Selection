@@ -68,7 +68,7 @@ class Evaluator:
 _DATA_CACHE={}
 def getdata(file):
  if file not in _DATA_CACHE:
-  p=DATA/file;d=pd.read_csv(p);X=d.iloc[:,:-1].to_numpy(dtype=float);Y=LabelEncoder().fit_transform(d.iloc[:,-1]);_DATA_CACHE.clear();_DATA_CACHE[file]=(X,Y,sha(p))
+  p=DATA/file;d=pd.read_csv(p,header=None);X=d.iloc[:,:-1].to_numpy(dtype=float);Y=LabelEncoder().fit_transform(d.iloc[:,-1]);_DATA_CACHE.clear();_DATA_CACHE[file]=(X,Y,sha(p))
  return _DATA_CACHE[file]
 def run_task(t):
  ident=taskid(t);target=ROOT/'results'/f'{ident}.json'
@@ -115,9 +115,8 @@ def plan():
  # E1 rerun provides actual subsets for consistent redundancy and exact provenance.
  retained=[]
  for r in load_jsonl(OLD/'bench_foldsafe_bare.jsonl'):
-  if any(v==0 for v in r['per_fold_red']) or (r['dataset']=='colon' and r['base']=='SSA' and r['run']==0):add('main',r,'Bare')
-  else:retained.append({**r,'reuse_reason':'Bare algorithm unchanged; all saved per-fold Red finite/nonzero, finite-pair convention leaves these values unchanged','source_file':'results/bench_foldsafe_bare.jsonl','source_sha256':sha(OLD/'bench_foldsafe_bare.jsonl'),'result_origin':'retained_legacy_not_rerun'})
- (ROOT/'retained_unchanged_bare.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in retained))
+  add('main', r, 'Bare')  # header=None: data changed, Bare must rerun (no retention)
+ (ROOT/'retained_unchanged_bare.jsonl').write_text('')
  for r in load_jsonl(OLD/'bench_foldsafe_full.jsonl'):
   if r['protocol']=='fold-safe':add('main',r)
  for r in load_jsonl(OLD/'bench_foldsafe_large_optimized.jsonl'):add('E7',r)

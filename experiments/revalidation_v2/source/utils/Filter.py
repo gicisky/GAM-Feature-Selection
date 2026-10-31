@@ -5,7 +5,7 @@ from sklearn.metrics import pairwise_distances
 
 
 def load_csv(filename):
-	data = pd.read_csv(filename)
+	data = pd.read_csv(filename, header=None)
 	# data.info()
 	X = data.values[:, 0:-1]
 	Y = data.values[:, -1]

@@ -1,41 +1,41 @@
 {
   "version": "GAM-revalidation-v2",
   "primary_records": 1125,
-  "new_records": 776,
-  "retained_records": 349,
+  "new_records": 1125,
+  "retained_records": 0,
   "macro": [
     {
       "mode": "Bare",
-      "accuracy": 0.7672193550686521,
-      "red_finite_pairs": 0.2139471914045365,
-      "red_pair_zero": 0.2138303195130259
+      "accuracy": 0.7706331800784462,
+      "red_finite_pairs": 0.21317428065063074,
+      "red_pair_zero": 0.21304414543468836
     },
     {
       "mode": "GAM",
-      "accuracy": 0.8236052542664307,
-      "red_finite_pairs": 0.27177019213656206,
-      "red_pair_zero": 0.27175633716424075
+      "accuracy": 0.8252697301686848,
+      "red_finite_pairs": 0.2684845652363747,
+      "red_pair_zero": 0.268466256720627
     },
     {
       "mode": "GAM-lambda0",
-      "accuracy": 0.816761176863415,
-      "red_finite_pairs": 0.3018430061946146,
-      "red_pair_zero": 0.3018329669938523
+      "accuracy": 0.8178852990750888,
+      "red_finite_pairs": 0.2992430491629809,
+      "red_pair_zero": 0.29922808781761756
     }
   ],
   "friedman": {
-    "statistic": 26.53333333333333,
-    "pvalue": 1.7312503468457515e-06
+    "statistic": 26.271186440677976,
+    "pvalue": 1.9737145735533404e-06
   },
   "mean_ranks": {
     "Bare": 3.0,
-    "GAM": 1.1333333333333333,
-    "GAM-lambda0": 1.8666666666666667
+    "GAM": 1.1666666666666667,
+    "GAM-lambda0": 1.8333333333333333
   },
   "paired_wilcoxon_unadjusted_exact": {
     "Bare vs GAM": 6.103515625e-05,
     "Bare vs GAM-lambda0": 6.103515625e-05,
-    "GAM-lambda0 vs GAM": 0.00152587890625
+    "GAM-lambda0 vs GAM": 0.0040283203125
   },
   "nemenyi_CD_approx": 0.8555426348230694,
   "note": "Red finite-pair and pair-zero reported separately. No old full-data diagnostic is combined with these new fold-safe results."
