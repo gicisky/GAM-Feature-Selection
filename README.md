@@ -91,6 +91,7 @@ The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +2.7 p
 | Embedded baselines | Boundary comparison with LASSO, Elastic Net, and Random Forest feature importance | `results/bench_embedded_baselines.jsonl` |
 | Multimetric endpoint robustness | Check accuracy, balanced accuracy, macro-F1, and weighted-F1 under the same fold-safe wrapper logic | `results/bench_multimetric_robustness_primary.jsonl` |
 | HMRF alpha sensitivity | Evaluate whether the fixed MI/ReliefF mixing weight is a fragile design choice | `results/bench_alpha_sensitivity_merged_5proc.jsonl` |
+| Fold-safe vs full-data leakage diagnostic | Quantify the optimism from building scaler/HMRF/graph on the full dataset instead of the outer training fold | `results/leakage_diagnostic_v2/` |
 
 ### Jaccard stability preview
 

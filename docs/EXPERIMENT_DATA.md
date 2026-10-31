@@ -414,7 +414,7 @@ Section: "Transfer to Recent Metaheuristic Searchers." 回答审稿人 "GAM 是�
 
 ### 核心贡献
 
-1. **Fold-safe HMRF Protocol**: 所有 HMRF scores 和 MinMaxScaler 在 outer_train 上计算，消除信息泄露。与 Full-data HMRF 对比已量化（+4.8% overestimation, CNS 最严重 +19.3%）。
+1. **Fold-safe HMRF Protocol**: 所有 HMRF scores 和 MinMaxScaler 在 outer_train 上计算，消除信息泄露。与 Full-data 预处理与引导（scaler+HMRF+graph）对比已量化：macro overestimation +4.16%，CNS 最严重 +18.2%（Wilcoxon 双侧 p=6.1×10⁻⁵）。
 
 2. **GAM (Graph-Augmented Metaheuristic) 框架**:
    - `safe_init`: HMRF 引导初始化（non-uniform sampling）
@@ -515,10 +515,10 @@ gam = GAM(X_tr, scores)  # C 矩阵仅在训练集
 # 评估: KNN 仅在训练集训练, 测试集预测
 ```
 
-### 信息泄露量化
-- Full-data HMRF overestimates accuracy by +4.8% (macro, 15 datasets)
-- Worst case: CNS +19.3%
-- 论文已量化: Wilcoxon p<0.001
+### 信息泄露量化（header=None 复验，15 数据集 × 5 runs）
+- Full-data 预处理与引导（scaler + HMRF + graph）整体高估准确率 +4.16%（macro，15 数据集）
+- 最严重: CNS +18.2%
+- Wilcoxon 双侧（精确条件符号秩枚举，15 数据集 full>safe 全同号）: p = 6.1×10⁻⁵
 
 ### GAM safe_crossover 图引导分支
 - O(k²) Python lambda 循环 → 对 D>5000 数据集性能敏感

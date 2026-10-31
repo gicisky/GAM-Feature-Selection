@@ -1,0 +1,149 @@
+{
+  "protocol": "joint-scaler-hmrf-graph-v2",
+  "n_datasets": 15,
+  "per_dataset": [
+    {
+      "dataset": "9_Tumors",
+      "n_runs": 5,
+      "safe_accuracy": 0.5266666666666667,
+      "full_accuracy": 0.6166666666666667,
+      "accuracy_difference": 0.08999999999999997,
+      "difference_min": 0.033333333333333326,
+      "difference_max": 0.18333333333333335
+    },
+    {
+      "dataset": "Brain_Tumor1",
+      "n_runs": 5,
+      "safe_accuracy": 0.868888888888889,
+      "full_accuracy": 0.8955555555555555,
+      "accuracy_difference": 0.026666666666666637,
+      "difference_min": 0.0,
+      "difference_max": 0.04444444444444462
+    },
+    {
+      "dataset": "Brain_Tumor_2",
+      "n_runs": 5,
+      "safe_accuracy": 0.784,
+      "full_accuracy": 0.8440000000000001,
+      "accuracy_difference": 0.06000000000000001,
+      "difference_min": 0.019999999999999907,
+      "difference_max": 0.16000000000000014
+    },
+    {
+      "dataset": "CLLSUB",
+      "n_runs": 5,
+      "safe_accuracy": 0.6882213438735179,
+      "full_accuracy": 0.7102766798418972,
+      "accuracy_difference": 0.02205533596837943,
+      "difference_min": -0.026482213438735358,
+      "difference_max": 0.06363636363636371
+    },
+    {
+      "dataset": "CNS",
+      "n_runs": 5,
+      "safe_accuracy": 0.636969696969697,
+      "full_accuracy": 0.8190909090909091,
+      "accuracy_difference": 0.18212121212121216,
+      "difference_min": 0.11666666666666659,
+      "difference_max": 0.21818181818181825
+    },
+    {
+      "dataset": "DLBCL",
+      "n_runs": 5,
+      "safe_accuracy": 0.9636666666666667,
+      "full_accuracy": 0.9766666666666666,
+      "accuracy_difference": 0.012999999999999966,
+      "difference_min": -0.012500000000000067,
+      "difference_max": 0.03916666666666657
+    },
+    {
+      "dataset": "Eleven_Tumor",
+      "n_runs": 5,
+      "safe_accuracy": 0.8481680672268908,
+      "full_accuracy": 0.8587226890756302,
+      "accuracy_difference": 0.010554621848739499,
+      "difference_min": -0.005210084033613449,
+      "difference_max": 0.01764705882352935
+    },
+    {
+      "dataset": "Leukemia1",
+      "n_runs": 5,
+      "safe_accuracy": 0.9497142857142856,
+      "full_accuracy": 0.9668571428571429,
+      "accuracy_difference": 0.01714285714285717,
+      "difference_min": 0.0,
+      "difference_max": 0.028571428571428692
+    },
+    {
+      "dataset": "Lung",
+      "n_runs": 5,
+      "safe_accuracy": 0.9416097560975608,
+      "full_accuracy": 0.952439024390244,
+      "accuracy_difference": 0.010829268292682959,
+      "difference_min": 0.004756097560975725,
+      "difference_max": 0.014878048780487707
+    },
+    {
+      "dataset": "MLL",
+      "n_runs": 5,
+      "safe_accuracy": 0.9295238095238094,
+      "full_accuracy": 0.9746666666666666,
+      "accuracy_difference": 0.04514285714285717,
+      "difference_min": 0.014285714285714235,
+      "difference_max": 0.05714285714285727
+    },
+    {
+      "dataset": "Prostate",
+      "n_runs": 5,
+      "safe_accuracy": 0.8975238095238096,
+      "full_accuracy": 0.9136190476190477,
+      "accuracy_difference": 0.016095238095238072,
+      "difference_min": 0.0004761904761904079,
+      "difference_max": 0.030000000000000027
+    },
+    {
+      "dataset": "SRBCT",
+      "n_runs": 5,
+      "safe_accuracy": 0.9589705882352941,
+      "full_accuracy": 0.9829411764705883,
+      "accuracy_difference": 0.023970588235294077,
+      "difference_min": 0.011029411764705843,
+      "difference_max": 0.03676470588235292
+    },
+    {
+      "dataset": "TOX-171",
+      "n_runs": 5,
+      "safe_accuracy": 0.8114285714285714,
+      "full_accuracy": 0.8431596638655463,
+      "accuracy_difference": 0.03173109243697483,
+      "difference_min": 0.005714285714285672,
+      "difference_max": 0.05310924369747916
+    },
+    {
+      "dataset": "arcene",
+      "n_runs": 5,
+      "safe_accuracy": 0.8320000000000001,
+      "full_accuracy": 0.8619999999999999,
+      "accuracy_difference": 0.029999999999999936,
+      "difference_min": 0.014999999999999902,
+      "difference_max": 0.04999999999999982
+    },
+    {
+      "dataset": "colon",
+      "n_runs": 5,
+      "safe_accuracy": 0.8253846153846153,
+      "full_accuracy": 0.8705128205128206,
+      "accuracy_difference": 0.045128205128205125,
+      "difference_min": 0.01538461538461533,
+      "difference_max": 0.06538461538461526
+    }
+  ],
+  "macro_accuracy_difference": 0.0416291962052738,
+  "signed_rank": {
+    "method": "exact conditional signed-rank sign enumeration; zero differences excluded",
+    "statistic": 0.0,
+    "pvalue": 6.103515625e-05,
+    "nonzero_datasets": 15
+  },
+  "interpretation": "Full-data minus outer-training-only preprocessing and guidance. Negative differences are allowed. This does not isolate HMRF leakage."
+}
