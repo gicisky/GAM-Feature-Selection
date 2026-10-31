@@ -137,7 +137,7 @@ def safe_redundancy(X, idx):
     C = np.abs(np.corrcoef(Xc.T))
     iu = np.triu_indices_from(C, k=1)
     return float(np.mean(C[iu]))
-DATASETS = ['colon(62,2000).csv', 'SRBCT(83,2308).csv', 'Leukemia1(72,5327).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'TOX-171(171,5748).csv', 'Brain_Tumor1(90,5920).csv', 'CNS(59,7130).csv', 'arcene(200,10000).csv', 'Brain_Tumor_2(49,10368).csv', 'CLLSUB(111,11340).csv', 'MLL(71,12583).csv', 'Prostate(102,12600).csv', 'Lung(202,12601).csv', 'Eleven_Tumor(173,12534).csv']
+DATASETS = ['colon(62,2000).csv', 'SRBCT(83,2308).csv', 'Leukemia1(72,5327).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'TOX-171(171,5748).csv', 'Brain_Tumor1(90,5920).csv', 'CNS(59,7130).csv', 'arcene(200,10000).csv', 'Brain_Tumor_2(50,10368).csv', 'CLLSUB(111,11340).csv', 'MLL(71,12583).csv', 'Prostate(102,12600).csv', 'Lung(202,12601).csv', 'Eleven_Tumor(174,12534).csv']
 METHODS = ['mRMR+KNN', 'ReliefF+KNN', 'mRMR+GA', 'ReliefF+GA', 'BareGA']
 N, T, NR = (100, 100, 5)
 OUTER_FOLDS, INNER_FOLDS, KNN_K = (5, 5, 5)

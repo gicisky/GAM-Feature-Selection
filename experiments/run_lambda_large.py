@@ -24,7 +24,7 @@ from sklearn.neighbors import KNeighborsClassifier
 RES_DIR = os.path.join(REPO_ROOT, 'results')
 OUT = f'{RES_DIR}/bench_lambda_sensitivity.jsonl'
 
-DATASETS = ['Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv']
+DATASETS = ['Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv']
 BASES = ['GA', 'DE', 'AO']
 LAMBDAS = [0.0, 0.2, 0.4, 0.5, 0.6, 0.8]
 NR, KNN_K, INNER_FOLDS = 3, 5, 5

@@ -21,7 +21,7 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 RES_DIR = os.path.join(REPO_ROOT, 'results')
 OUT = f'{RES_DIR}/bench_foldsafe_filter.jsonl'
-DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
+DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
 FILTER_K = {'colon': 100, 'DLBCL': 273, '9_Tumors': 286, 'Brain_Tumor1': 296, 'Brain_Tumor_2': 518, 'arcene': 500, 'Lung': 630}
 FILTERS = ['MI', 'ReliefF', 'mRMR', 'F-score']
 OUTER_FOLDS, KNN_K = (5, 5)

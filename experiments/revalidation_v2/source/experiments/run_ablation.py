@@ -27,7 +27,7 @@ def safe_redundancy(X, idx):
     C = np.abs(np.corrcoef(Xc.T))
     iu = np.triu_indices_from(C, k=1)
     return float(np.mean(C[iu]))
-DATASETS = ['colon(62,2000).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(49,10368).csv', 'DLBCL(77,5469).csv', 'arcene(200,10000).csv', 'SRBCT(83,2308).csv', 'Leukemia1(72,5327).csv', 'TOX-171(171,5748).csv', 'CNS(59,7130).csv', 'CLLSUB(111,11340).csv', 'MLL(71,12583).csv', 'Prostate(102,12600).csv', 'Lung(202,12601).csv', 'Eleven_Tumor(173,12534).csv']
+DATASETS = ['colon(62,2000).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(50,10368).csv', 'DLBCL(77,5469).csv', 'arcene(200,10000).csv', 'SRBCT(83,2308).csv', 'Leukemia1(72,5327).csv', 'TOX-171(171,5748).csv', 'CNS(59,7130).csv', 'CLLSUB(111,11340).csv', 'MLL(71,12583).csv', 'Prostate(102,12600).csv', 'Lung(202,12601).csv', 'Eleven_Tumor(174,12534).csv']
 MAIN_DS = {'colon', '9_Tumors', 'Brain_Tumor1', 'Brain_Tumor_2', 'DLBCL', 'arcene'}
 BASES = ['GA', 'CSA', 'DE']
 GROUPS = [('A-Bare', None), ('B-GAM-l0', 0.0), ('C-Full-GAM', 0.6)]

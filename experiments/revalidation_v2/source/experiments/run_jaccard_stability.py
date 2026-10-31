@@ -64,7 +64,7 @@ try:
     from Filter import load_csv, reliefFScore
 except Exception as exc:
     raise RuntimeError('Failed to import project modules. Please run this script from the repository root or keep it under experiments/. Expected directories: code/, utils/, data/.') from exc
-DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv']
+DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv']
 MODES = ['Bare', 'GAM-lambda0', 'GAM']
 MODE_LABEL = {'Bare': 'Bare-GA', 'GAM-lambda0': 'GAM-λ0', 'GAM': 'GAM λ=0.6'}
 

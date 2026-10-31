@@ -34,7 +34,7 @@ def safe_redundancy(X, idx):
 
 DATASETS = [
     'colon(62,2000).csv', 'DLBCL(77,5469).csv',
-    'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv',
+    'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv',
 ]  # 4 representative DS for SOTA external comparison
 
 BASES = ['AO', 'GWO']  # Both SOTA bases, fold-safe protocol

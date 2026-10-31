@@ -48,7 +48,7 @@ try:
     from Filter import load_csv
 except Exception as exc:
     raise RuntimeError('Failed to import Filter.load_csv. Please run from the repository root or keep this script under experiments/. Expected directories: utils/, data/.') from exc
-DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
+DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
 
 def dataset_name(ds_file: str) -> str:
     return ds_file.split('(')[0]

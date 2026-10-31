@@ -71,7 +71,7 @@ DATASETS = [
     "DLBCL(77,5469).csv",
     "9_Tumors(60,5726).csv",
     "Brain_Tumor1(90,5920).csv",
-    "Brain_Tumor_2(49,10368).csv",
+    "Brain_Tumor_2(50,10368).csv",
     "arcene(200,10000).csv",
     "Lung(202,12601).csv",
 ]

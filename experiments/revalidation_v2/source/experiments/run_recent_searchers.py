@@ -27,7 +27,7 @@ from sklearn.model_selection import StratifiedKFold, KFold, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 RES_DIR = os.path.join(REPO_ROOT, 'results')
 OUT = f'{RES_DIR}/bench_recent_searchers.jsonl'
-DATASETS = ['colon(62,2000).csv', 'SRBCT(83,2308).csv', 'DLBCL(77,5469).csv', 'Leukemia1(72,5327).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv', 'Prostate(102,12600).csv']
+DATASETS = ['colon(62,2000).csv', 'SRBCT(83,2308).csv', 'DLBCL(77,5469).csv', 'Leukemia1(72,5327).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor1(90,5920).csv', 'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv', 'Prostate(102,12600).csv']
 METHODS = ['SCSO', 'GAM-SCSO', 'COA', 'GAM-COA']
 NR, KNN_K, INNER_FOLDS, OUTER_FOLDS = (5, 5, 3, 5)
 N, T = (50, 50)

@@ -45,7 +45,7 @@ import bench_gam
 from bench_bare import ga_bare
 from bench_gam import GAM, ga_gam_safe
 from Filter import load_csv, reliefFScore
-DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor_2(49,10368).csv', 'SRBCT(83,2308).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
+DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', '9_Tumors(60,5726).csv', 'Brain_Tumor_2(50,10368).csv', 'SRBCT(83,2308).csv', 'arcene(200,10000).csv', 'Lung(202,12601).csv']
 
 def dataset_name(ds_file: str) -> str:
     return ds_file.split('(')[0]

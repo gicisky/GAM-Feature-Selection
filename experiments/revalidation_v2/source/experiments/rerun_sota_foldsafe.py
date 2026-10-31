@@ -31,7 +31,7 @@ def safe_redundancy(X, idx):
     C = np.abs(np.corrcoef(Xc.T))
     iu = np.triu_indices_from(C, k=1)
     return float(np.mean(C[iu]))
-DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', 'Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv']
+DATASETS = ['colon(62,2000).csv', 'DLBCL(77,5469).csv', 'Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv']
 BASES = ['AO', 'GWO']
 BASE_FN = {'AO': ao_gam_safe, 'GWO': gwo_gam_safe}
 MODES = [('GAM-lambda0', 0.0), ('GAM', 0.6)]

@@ -8,7 +8,7 @@ from fast_evaluator import FastEvaluator
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import StratifiedKFold
 rng=np.random.default_rng(20261031);rows=[]
-files=['colon(62,2000).csv','9_Tumors(60,5726).csv','DLBCL(77,5469).csv','arcene(200,10000).csv','Lung(202,12601).csv','Eleven_Tumor(173,12534).csv']
+files=['colon(62,2000).csv','9_Tumors(60,5726).csv','DLBCL(77,5469).csv','arcene(200,10000).csv','Lung(202,12601).csv','Eleven_Tumor(174,12534).csv']
 for file in files:
  X,y,_=core.getdata(file);tr,te=next(StratifiedKFold(5,shuffle=True,random_state=42).split(X,y));X=MinMaxScaler().fit_transform(X[tr]);y=y[tr];k=int(X.shape[1]*.05)
  for inner in [3,5]:

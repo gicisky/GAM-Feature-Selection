@@ -26,7 +26,7 @@ RES_DIR = os.path.join(REPO_ROOT, 'results')
 OUT = f'{RES_DIR}/bench_foldsafe_sota.jsonl'
 PROGRESS = f'{RES_DIR}/.sota_large_progress.log'
 
-DATASETS = ['Brain_Tumor_2(49,10368).csv', 'arcene(200,10000).csv']  # DLBCL补跑用原脚本
+DATASETS = ['Brain_Tumor_2(50,10368).csv', 'arcene(200,10000).csv']  # DLBCL补跑用原脚本
 BASES = ['AO', 'GWO']
 BASE_FN = {'AO': ao_gam_safe, 'GWO': gwo_gam_safe}
 MODES = [('GAM', 0.6)]  # SOTA table compares final method only, λ0 not needed
