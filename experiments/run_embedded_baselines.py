@@ -38,6 +38,7 @@ from sklearn.base import clone
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.exceptions import ConvergenceWarning
 from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.model_selection import StratifiedKFold, KFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
@@ -105,7 +106,12 @@ def top_k_from_importance(importance, k: int):
 
 def coefficient_importance(model):
     """Convert logistic-regression coefficients to feature importance."""
-    coef = np.asarray(model.coef_, dtype=float)
+    if hasattr(model, "coef_"):
+        coef = np.asarray(model.coef_, dtype=float)
+    elif hasattr(model, "estimators_"):
+        coef = np.asarray([est.coef_ for est in model.estimators_], dtype=float)
+    else:
+        raise AttributeError("model has neither coef_ nor estimators_")
     if coef.ndim == 1:
         return np.abs(coef)
     # For binary and multiclass: aggregate across one-vs-rest/multinomial classes.
@@ -116,13 +122,18 @@ def build_methods(seed: int, rf_trees: int):
     """Fresh model templates. clone() is used before each fold."""
     return {
         # liblinear is usually robust for small-n high-D L1 logistic regression.
-        "LASSO": LogisticRegression(
-            penalty="l1",
-            solver="liblinear",
-            C=1.0,
-            max_iter=5000,
-            class_weight="balanced",
-            random_state=seed,
+        # Wrapped in OneVsRestClassifier for multiclass datasets (sklearn>=1.8
+        # no longer falls back to OvR for the liblinear solver).
+        "LASSO": OneVsRestClassifier(
+            LogisticRegression(
+                penalty="l1",
+                solver="liblinear",
+                C=1.0,
+                max_iter=5000,
+                class_weight="balanced",
+                random_state=seed,
+            ),
+            n_jobs=1,
         ),
         # Elastic net requires saga.
         "ElasticNet": LogisticRegression(
@@ -206,6 +217,8 @@ def evaluate_embedded_dataset(ds_file, methods, outer_folds, knn_k, seed, k_rati
             # Update fold-specific random_state when supported.
             if hasattr(model, "random_state"):
                 model.set_params(random_state=fold_seed)
+            elif hasattr(model, "estimator") and hasattr(model.estimator, "random_state"):
+                model.estimator.set_params(random_state=fold_seed)
 
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore", ConvergenceWarning)

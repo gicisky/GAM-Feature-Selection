@@ -219,3 +219,22 @@ __marimo__/
 
 # macOS
 .DS_Store
+
+# Revalidation working copies (header=0 pre-fix) — canonical header=None results
+# live under results/revalidation_v2/. These are kept locally only as backups.
+experiments/revalidation_v2/results/
+experiments/revalidation_v2/component_ablation/
+experiments/revalidation_v2/completed_records.csv
+experiments/revalidation_v2/run.lock
+experiments/revalidation_v2/progress.json
+experiments/revalidation_v2/status.json
+experiments/revalidation_v2/primary_macro.csv
+experiments/revalidation_v2/primary_statistics.json
+experiments/revalidation_v2/primary_dataset_means.csv
+experiments/revalidation_v2/primary_complete_provenance.csv
+experiments/revalidation_v2/main_completed_vs_legacy.csv
+experiments/revalidation_v2/fast_crossover_validation.json
+experiments/revalidation_v2/fast_execution_manifest.json
+experiments/revalidation_v2/fast_full_fold_validation.json
+experiments/revalidation_v2/fast_validation.json
+results/revalidation_v2_header0/

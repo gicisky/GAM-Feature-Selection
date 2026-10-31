@@ -110,10 +110,10 @@ The wrapper fitness remains inner-CV KNN accuracy, while the additional endpoint
 
 | Metric | Bare-GA | GAM-GA | Δ | W/L/T | Wilcoxon p |
 |--------|--------:|-------:|--:|:-----:|-----------:|
-| Accuracy | 0.7765 | **0.8264** | +0.0499 | 7/0/0 | 0.0156 |
-| Balanced accuracy | 0.7427 | **0.8029** | +0.0601 | 7/0/0 | 0.0156 |
-| Macro-F1 | 0.7231 | **0.7887** | +0.0656 | 7/0/0 | 0.0156 |
-| Weighted-F1 | 0.7586 | **0.8125** | +0.0539 | 7/0/0 | 0.0156 |
+| Accuracy | 0.7855 | **0.8351** | +0.0496 | 6/1/0 | 0.0313 |
+| Balanced accuracy | 0.7548 | **0.8092** | +0.0544 | 6/1/0 | 0.0469 |
+| Macro-F1 | 0.7343 | **0.7935** | +0.0593 | 6/1/0 | 0.0313 |
+| Weighted-F1 | 0.7675 | **0.8211** | +0.0536 | 6/1/0 | 0.0313 |
 
 This analysis supports the manuscript's endpoint-robustness statement: the GAM-GA gain is not limited to raw accuracy. It is reported as supplementary evidence rather than as a replacement for the 15-dataset primary benchmark.
 
@@ -123,25 +123,26 @@ The primary experiments use equal MI/ReliefF weighting (`alpha=0.5`) as a pre-sp
 
 | Alpha | Accuracy | Balanced Acc | Macro-F1 | Redundancy |
 |------:|---------:|-------------:|---------:|-----------:|
-| 0.2 | 0.7468 | 0.7376 | 0.7017 | 0.2543 |
-| 0.4 | 0.7565 | 0.7465 | 0.7214 | 0.2618 |
-| 0.5 | 0.7307 | 0.7232 | 0.6962 | 0.2641 |
-| 0.6 | 0.7596 | 0.7510 | **0.7242** | 0.2665 |
-| 0.8 | **0.7620** | **0.7604** | 0.7201 | 0.2635 |
+| 0.2 | 0.7471 | 0.7290 | 0.7003 | 0.2571 |
+| 0.4 | 0.7556 | 0.7441 | 0.7175 | 0.2643 |
+| 0.5 | 0.7646 | 0.7514 | 0.7259 | 0.2668 |
+| 0.6 | **0.7789** | **0.7715** | **0.7445** | 0.2637 |
+| 0.8 | 0.7777 | 0.7719 | 0.7418 | 0.2647 |
 
 These results should not be used to retune the main benchmark. They show that HMRF weighting is not a single-point artifact and that mid-to-high MI weights (`alpha=0.6-0.8`) are promising for future adaptive weighting.
 
 ### Embedded baseline preview
 
-Representative embedded feature-selection baselines are evaluated under the same fold-safe top-k KNN protocol.
+Representative embedded feature-selection baselines are evaluated under the same fold-safe top-k KNN protocol on 7 datasets. The GAM λ=0.6 column is the same-dataset macro reference from the main benchmark.
 
 | Method | Macro Accuracy |
 |--------|---------------:|
-| LASSO | 0.7726 |
-| Elastic Net | **0.7927** |
-| Random Forest | 0.7871 |
+| LASSO | 0.7447 |
+| Elastic Net | 0.7968 |
+| Random Forest | 0.7944 |
+| GAM λ=0.6 (E2 reference) | **0.8136** |
 
-These baselines are reported as supplementary boundary comparisons. They are competitive under fixed-k accuracy evaluation, but they do not provide optimizer-agnostic graph-guided variation operators or explicit redundancy-aware wrapper search.
+GAM λ=0.6 retains a clear margin over the embedded baselines (+1.68 pp over Elastic Net, +1.92 pp over Random Forest, +6.89 pp over LASSO) under fixed-k accuracy evaluation. These baselines are reported as supplementary boundary comparisons: they are competitive, but they do not provide optimizer-agnostic graph-guided variation operators or explicit redundancy-aware wrapper search.
 
 ---
 
