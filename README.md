@@ -69,6 +69,17 @@ The revalidation reruns 1524 main-queue tasks + 60 component tasks with **0 erro
 
 The accuracy gain (+5.64 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (≈ −10% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the mean when any pair was undefined) was replaced by the finite-pair convention.
 
+The revalidation also replaces the old coarse three-arm ablation (`Bare` / `GAM-λ0` / `GAM`) with a **finer component ablation** that isolates each GAM mechanism on the *same* GA backbone — the earlier ablation compared distinct backbones, so it could not attribute the gain to any single component:
+
+| Group | Components | Accuracy | Redundancy |
+|-------|-----------|---------:|-----------:|
+| A | uniform init + random crossover | 0.7130 | 0.2467 |
+| B | + HMRF top-pool init | 0.7459 | 0.2740 |
+| C | + relevance-guided crossover (λ=0) | 0.7506 | 0.2809 |
+| D | + λ=0.6 penalty | 0.7546 | 0.2695 |
+
+The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +3.3 pp); the relevance-guided crossover (+0.5 pp) and the λ penalty (+0.4 pp) contribute less, with λ's main effect being the redundancy reduction (C→D). See [`experiments/revalidation_v2/component_ablation.py`](experiments/revalidation_v2/component_ablation.py).
+
 ---
 
 ## Additional Supplementary Analyses
@@ -149,7 +160,7 @@ These baselines are reported as supplementary boundary comparisons. They are com
 
 | Experiment | Purpose | Main output |
 |-----------|---------|-------------|
-| E1 Bare ablation | Native optimizers without HMRF/graph/λ | `bench_foldsafe_bare.jsonl` |
+| E1 Bare ablation | Native optimizers without HMRF/graph/λ (superseded by the finer per-component ablation in [Revalidation](#revalidation)) | `bench_foldsafe_bare.jsonl` |
 | E2 Main GAM benchmark | GAM-λ0 vs GAM λ=0.6 under fold-safe protocol | `bench_foldsafe_full.jsonl` |
 | E3 λ sensitivity | Robustness of λ=0.6 across representative datasets and base optimizers | `bench_lambda_sensitivity.jsonl` |
 | E4 External optimizer transfer | AO/GWO external validation | `bench_foldsafe_sota.jsonl` |
