@@ -90,7 +90,7 @@ The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +2.7 p
 | Jaccard selected-subset stability | Measure reproducibility of selected feature subsets across folds and runs | `results/bench_jaccard_stability.jsonl` |
 | Embedded baselines | Boundary comparison with LASSO, Elastic Net, and Random Forest feature importance | `results/bench_embedded_baselines.jsonl` |
 | Multimetric endpoint robustness | Check accuracy, balanced accuracy, macro-F1, and weighted-F1 under the same fold-safe wrapper logic | `results/bench_multimetric_robustness_clean.jsonl` |
-| HMRF alpha sensitivity | Evaluate whether the fixed MI/ReliefF mixing weight is a fragile design choice | `results/bench_alpha_sensitivity_shard_*_of_5.jsonl` |
+| HMRF alpha sensitivity | Evaluate whether the fixed MI/ReliefF mixing weight is a fragile design choice | `results/bench_alpha_sensitivity_merged_5proc.jsonl` |
 
 ### Jaccard stability preview
 
@@ -170,7 +170,7 @@ GAM λ=0.6 retains a clear margin over the embedded baselines (+1.68 pp over Ela
 | E7 Large-dimensional feasibility | Feasibility under high-dimensional limited-budget setting | `bench_foldsafe_large_optimized.jsonl` |
 | E8 Independent wrappers | BGWO/BPSO/GAM-GA comparison | `bench_independent_wrappers.jsonl` |
 | E9 Multimetric endpoint robustness | Accuracy, balanced accuracy, macro-F1, and weighted-F1 | `bench_multimetric_robustness_clean.jsonl` |
-| E10 HMRF alpha sensitivity | Sensitivity of the MI/ReliefF mixing weight | `bench_alpha_sensitivity_shard_*_of_5.jsonl` |
+| E10 HMRF alpha sensitivity | Sensitivity of the MI/ReliefF mixing weight | `bench_alpha_sensitivity_merged_5proc.jsonl` |
 | Supplementary convergence | Search-process behavior | `bench_convergence.jsonl` |
 | Supplementary stability | Selected-subset reproducibility across folds and runs | `bench_jaccard_stability.jsonl` |
 | Supplementary embedded baselines | LASSO, Elastic Net, and Random Forest boundary baselines | `bench_embedded_baselines.jsonl` |
