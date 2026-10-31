@@ -55,7 +55,7 @@ def poa_gam_safe(X, Y, k, gam, N=100, T=100, penalty=0.6):
             direction = prey_cont - I_factor * cont
             new_cont = cont + np.random.rand(p) * direction
             new = topk_binary(sigmoid(new_cont), k_eff)
-            child = gam.safe_crossover(new, pop[i], k_eff, gen=T, max_gen=T, penalty=penalty)
+            child = gam.safe_crossover(new, pop[i], k_eff, gen=t, max_gen=T, penalty=penalty)
             child = gam.safe_mutate(child, k_eff)
             nf = evaluate(X, Y, np.where(child)[0])
             if nf > fit[i]: pop[i] = child; fit[i] = nf
@@ -68,7 +68,7 @@ def poa_gam_safe(X, Y, k, gam, N=100, T=100, penalty=0.6):
             perturbation = R * (2 * np.random.rand(p) - 1)
             new_cont = cont + perturbation
             new = topk_binary(sigmoid(new_cont), k_eff)
-            child = gam.safe_crossover(new, pop[i], k_eff, gen=T, max_gen=T, penalty=penalty)
+            child = gam.safe_crossover(new, pop[i], k_eff, gen=t, max_gen=T, penalty=penalty)
             child = gam.safe_mutate(child, k_eff)
             nf = evaluate(X, Y, np.where(child)[0])
             if nf > fit[i]: pop[i] = child; fit[i] = nf
@@ -119,7 +119,7 @@ def ao_gam_safe(X, Y, k, gam, N=100, T=100, penalty=0.6):
                     new_cont = QF * best_cont - g1 * cont * np.random.rand() - g2 * levy + np.random.rand(p) * g1
 
             new = topk_binary(sigmoid(new_cont), k_eff)
-            child = gam.safe_crossover(new, pop[i], k_eff, gen=T, max_gen=T, penalty=penalty)
+            child = gam.safe_crossover(new, pop[i], k_eff, gen=t, max_gen=T, penalty=penalty)
             child = gam.safe_mutate(child, k_eff)
 
             nf = evaluate(X, Y, np.where(child)[0])
@@ -159,7 +159,7 @@ def tso_gam_safe(X, Y, k, gam, N=100, T=100, penalty=0.6):
                 new_cont = (new_cont + neighbor_cont) / 2.0
 
             new = topk_binary(sigmoid(new_cont), k_eff)
-            child = gam.safe_crossover(new, pop[i], k_eff, gen=T, max_gen=T, penalty=penalty)
+            child = gam.safe_crossover(new, pop[i], k_eff, gen=t, max_gen=T, penalty=penalty)
             child = gam.safe_mutate(child, k_eff)
 
             nf = evaluate(X, Y, np.where(child)[0])

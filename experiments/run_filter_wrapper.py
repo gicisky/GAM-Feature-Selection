@@ -175,8 +175,8 @@ def run_one_task(args):
         # Run optimizer
         gam = GAM(X_tr, scores)
         o = gam.safe_crossover
-        gam.safe_crossover = lambda p1, p2, k, g=0, mg=100, **kw: o(
-            p1, p2, k, gen=g, max_gen=mg, penalty=penalty)
+        gam.safe_crossover = lambda p1, p2, k, gen=0, max_gen=100, **kw: o(
+            p1, p2, k, gen=gen, max_gen=max_gen, penalty=penalty)
 
         orig_eval = bench_gam.evaluate
         try:

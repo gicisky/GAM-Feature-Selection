@@ -98,8 +98,8 @@ def run_one_task(args):
 
         gam = GAM(X_tr, scores)
         o = gam.safe_crossover
-        gam.safe_crossover = lambda p1, p2, k, g=0, mg=100, **kw: o(
-            p1, p2, k, gen=g, max_gen=mg, penalty=lam)
+        gam.safe_crossover = lambda p1, p2, k, gen=0, max_gen=100, **kw: o(
+            p1, p2, k, gen=gen, max_gen=max_gen, penalty=lam)
 
         orig_e = bench_gam.evaluate
         try:

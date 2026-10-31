@@ -109,8 +109,8 @@ def run_with_convergence_and_sol(X, Y, k, base_name, mode, seed, gam=None):
             sol = BASE_FN_BARE[base_name](X, Y, k, N, T)
         else:
             o = gam.safe_crossover
-            gam.safe_crossover = lambda p1, p2, k, g=0, mg=100, **kw: o(
-                p1, p2, k, gen=g, max_gen=mg, penalty=0.6)
+            gam.safe_crossover = lambda p1, p2, k, gen=0, max_gen=100, **kw: o(
+                p1, p2, k, gen=gen, max_gen=max_gen, penalty=0.6)
             sol = BASE_FN_GAM[base_name](X, Y, k, gam, N, T)
     finally:
         bench_gam.evaluate = orig_eval

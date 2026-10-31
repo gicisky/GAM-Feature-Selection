@@ -47,11 +47,27 @@ This repository accompanies the manuscript submitted to **Applied Soft Computing
 
 | Metric | Bare | GAM-λ0 | GAM λ=0.6 |
 |--------|-----:|-------:|----------:|
-| Macro Accuracy | 0.7672 | 0.8187 | **0.8236** |
-| Macro Redundancy | 0.2036 | 0.2967 | **0.2660** |
-| ΔRed vs GAM-λ0 | — | — | **−10.33%** |
+| Macro Accuracy | 0.7672 | 0.8168 | **0.8236** |
+| Macro Redundancy (finite-pair) | 0.2139 | 0.3018 | **0.2718** |
+| ΔRed vs GAM-λ0 | — | — | **−9.96%** |
 
-GAM improves the macro-average fold-safe accuracy from **0.7672** to **0.8236**, corresponding to a **5.64 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **10.33%** relative to GAM-λ0 while preserving the same accuracy tier.
+GAM improves the macro-average fold-safe accuracy from **0.7672** to **0.8236**, corresponding to a **5.64 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **9.96%** relative to GAM-λ0 while preserving the same accuracy tier. These figures come from the fold-safe revalidation (see [Revalidation](#revalidation)); redundancy uses the finite-pair convention defined there.
+
+---
+
+## Revalidation
+
+The main benchmark and its supporting experiments were **revalidated** after a pre-submission code–data audit identified three implementation issues (SSA λ-invariance, a crossover wrapper that swallowed `gen`/`max_gen`, and an AO/POA/TSO `gen=T` call). The fixes are applied in place in `code/` and `experiments/`, and the full revalidation pipeline lives in [`experiments/revalidation_v2/`](experiments/revalidation_v2/README.md), with raw results under [`results/revalidation_v2/`](results/revalidation_v2/).
+
+The revalidation reruns 1524 main-queue tasks + 60 component tasks with **0 errors** and confirms the manuscript's conclusions:
+
+| Test | Statistic |
+|------|-----------|
+| Friedman (Bare / GAM-λ0 / GAM) | χ² = 26.53, **p = 1.73 × 10⁻⁶** |
+| Exact paired Wilcoxon, Bare vs GAM | **p = 6.1 × 10⁻⁵** |
+| Exact paired Wilcoxon, GAM-λ0 vs GAM | **p = 0.0015** |
+
+The accuracy gain (+5.64 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (≈ −10% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the mean when any pair was undefined) was replaced by the finite-pair convention.
 
 ---
 

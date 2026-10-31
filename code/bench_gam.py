@@ -12,7 +12,7 @@ Safe Boost GAM - 最终梯度1升级版（中科院一区 / CCF-B 创新级别�
 
 import sys, os, time, json, numpy as np
 import warnings
-warnings.filterwarnings('ignore')
+# warnings remain visible in revalidation
 
 try:
     from Filter import load_csv, reliefFScore
@@ -230,31 +230,41 @@ def csa_gam_safe(X, Y, k, gam, N=100, T=100, AP=0.1):
 def ssa_gam_safe(X, Y, k, gam, N=100, T=100):
     k_eff = min(k, gam.p)
     salps = gam.safe_init(N, k_eff).astype(float)
-
-    def get_fit(s):
-        th = np.sort(s)[-k_eff]
-        sel = np.where(s >= th)[0]
-        if len(sel) > k_eff:
-            sel = np.random.choice(sel, k_eff, False)
-        return evaluate(X, Y, sel), sel
-
-    fits = np.array([get_fit(s)[0] for s in salps])
-    best_idx = fits.argmax()
-    best_salp = salps[best_idx].copy()
-
+    def discretize(s):
+        threshold = np.sort(s)[-k_eff]
+        idx = np.where(s >= threshold)[0]
+        if len(idx) > k_eff:
+            idx = np.random.choice(idx, k_eff, False)
+        binary = np.zeros(gam.p, dtype=bool)
+        binary[idx] = True
+        return binary
+    subsets = salps.astype(bool)
+    fits = np.array([evaluate(X, Y, np.flatnonzero(s)) for s in subsets])
+    bi = int(fits.argmax())
+    best_fit, best = float(fits[bi]), subsets[bi].copy()
+    best_salp = salps[bi].copy()
     for gen in range(T):
         c1 = 2.0 - 2.0 * gen / T
         for i in range(N):
             if i == 0:
                 salps[i] = np.clip(salps[i] + c1 * (best_salp - salps[i]) * np.random.rand(gam.p), 0, 1)
             else:
-                salps[i] = np.clip((salps[i] + salps[i-1])/2, 0, 1)
-        fits = np.array([get_fit(s)[0] for s in salps])
-        new_best = fits.argmax()
-        if fits[new_best] > fits[best_idx]:
-            best_idx = new_best
-            best_salp = salps[best_idx].copy()
-    return get_fit(best_salp)[1]
+                salps[i] = np.clip((salps[i] + salps[i-1]) / 2, 0, 1)
+        new_subsets = []
+        new_fits = []
+        for i in range(N):
+            proposal = discretize(salps[i])
+            child = gam.safe_crossover(proposal, best, k_eff, gen=gen, max_gen=T)
+            child = gam.safe_mutate(child, k_eff)
+            value = evaluate(X, Y, np.flatnonzero(child))
+            new_subsets.append(child)
+            new_fits.append(value)
+            if value > best_fit:
+                best_fit, best = float(value), child.copy()
+                best_salp = child.astype(float)
+        subsets = np.array(new_subsets)
+        fits = np.array(new_fits)
+    return np.flatnonzero(best)
 
 # #############################################################################
 # ======================= ISSA+GAM Safe（消融实验核心）=======================

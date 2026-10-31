@@ -101,8 +101,8 @@ def run_one_task(args):
                       + 0.5 * (rf - rf.min()) / (rf.max() - rf.min() + 1e-12))
             gam = GAM(X_tr, scores)
             o = gam.safe_crossover
-            gam.safe_crossover = lambda p1, p2, k, g=0, mg=100, **kw: o(
-                p1, p2, k, gen=g, max_gen=mg, penalty=0.6)
+            gam.safe_crossover = lambda p1, p2, k, gen=0, max_gen=100, **kw: o(
+                p1, p2, k, gen=gen, max_gen=max_gen, penalty=0.6)
             orig_e = bench_gam.evaluate
             try:
                 bench_gam.evaluate = lambda X_, Y_, idx: (

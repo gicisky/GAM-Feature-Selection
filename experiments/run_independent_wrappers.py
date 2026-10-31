@@ -241,8 +241,8 @@ def run_gam_ga(X, Y, k, hmrf_scores):
     """GAM-GA with HMRF scores and λ=0.6."""
     gam = GAM(X, hmrf_scores)
     o = gam.safe_crossover
-    gam.safe_crossover = lambda p1, p2, k, g=0, mg=100, **kw: o(
-        p1, p2, k, gen=g, max_gen=mg, penalty=0.6)
+    gam.safe_crossover = lambda p1, p2, k, gen=0, max_gen=100, **kw: o(
+        p1, p2, k, gen=gen, max_gen=max_gen, penalty=0.6)
 
     orig_eval = bench_gam.evaluate
     try:

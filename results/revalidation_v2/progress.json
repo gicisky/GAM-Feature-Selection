@@ -1,0 +1,28 @@
+{
+  "generated_unix": 1793405596.697925,
+  "planned_tasks": 1524,
+  "completed_tasks": 1524,
+  "completed_folds": 5208,
+  "error_tasks": 0,
+  "planned_by_experiment": {
+    "main": 776,
+    "E10_matched": 45,
+    "E7": 72,
+    "lambda": 270,
+    "E4": 100,
+    "convergence": 72,
+    "independent": 63,
+    "filter_guided": 126
+  },
+  "completed_by_experiment": {
+    "lambda": 270,
+    "independent": 63,
+    "main": 776,
+    "E4": 100,
+    "filter_guided": 126,
+    "convergence": 72,
+    "E10_matched": 45,
+    "E7": 72
+  },
+  "warning": "partial results; no complete primary benchmark inference until all required groups are complete"
+}

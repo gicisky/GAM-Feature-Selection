@@ -1,0 +1,9 @@
+{
+  "version": "GAM-revalidation-v2",
+  "SSA": "new explicit GAM refinement integration and exact historic discrete best; not old implementation",
+  "wrapper": "forward gen and max_gen without swallowing",
+  "sota_generation_calls_corrected": 4,
+  "data": "preserve existing header=0 loading; report actual n",
+  "redundancy": "report finite-pair mean plus legacy zero and pair-zero sensitivity",
+  "GA_CSA": "preserve existing pipeline implementations; no claim of isolated operator-only ablation"
+}
