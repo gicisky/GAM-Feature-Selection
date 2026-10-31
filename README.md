@@ -48,10 +48,10 @@ This repository accompanies the manuscript submitted to **Applied Soft Computing
 | Metric | Bare | GAM-λ0 | GAM λ=0.6 |
 |--------|-----:|-------:|----------:|
 | Macro Accuracy | 0.7706 | 0.8179 | **0.8253** |
-| Macro Redundancy (finite-pair) | 0.2132 | 0.2992 | **0.2685** |
+| Macro Redundancy (pairwise-zero) | 0.2130 | 0.2992 | **0.2685** |
 | ΔRed vs GAM-λ0 | — | — | **−10.28%** |
 
-GAM improves the macro-average fold-safe accuracy from **0.7706** to **0.8253**, corresponding to a **5.46 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **10.28%** relative to GAM-λ0 while preserving the same accuracy tier. These figures come from the fold-safe revalidation (see [Revalidation](#revalidation)); redundancy uses the finite-pair convention defined there.
+GAM improves the macro-average fold-safe accuracy from **0.7706** to **0.8253**, corresponding to a **5.46 percentage-point gain** over Bare optimizers. Within the GAM framework, the λ-guided redundancy penalty reduces redundancy by **10.28%** relative to GAM-λ0 while preserving the same accuracy tier. These figures come from the fold-safe revalidation (see [Revalidation](#revalidation)); redundancy uses the pairwise-zero convention defined there, with finite-pair averages reported as a sensitivity check.
 
 ---
 
@@ -67,7 +67,7 @@ The revalidation reruns 1873 main-queue tasks + 60 component tasks with **0 erro
 | Exact paired Wilcoxon, Bare vs GAM | **p = 6.1 × 10⁻⁵** |
 | Exact paired Wilcoxon, GAM-λ0 vs GAM | **p = 0.0040** |
 
-The accuracy gain (+5.46 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (−10.28% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the mean when any pair was undefined) was replaced by the finite-pair convention.
+The accuracy gain (+5.46 pp Bare → GAM λ=0.6) and the λ-guided redundancy reduction (−10.28% relative to GAM-λ0) are both reproduced; only the redundancy absolute values shift slightly because the legacy definition (which zeroed the whole-subset mean when any pair was undefined) was replaced by the pairwise-zero convention (undefined pairs are zeroed individually). Finite-pair averages are reported separately as a sensitivity check.
 
 The revalidation also replaces the old coarse three-arm ablation (`Bare` / `GAM-λ0` / `GAM`) with a **finer component ablation** that isolates each GAM mechanism on the *same* GA backbone — the earlier ablation compared distinct backbones, so it could not attribute the gain to any single component:
 
@@ -87,35 +87,35 @@ The gain is driven primarily by **HMRF-guided initialization** (A→B ≈ +2.7 p
 | Analysis | Main purpose | Output file |
 |----------|--------------|-------------|
 | Convergence monitoring | Inspect search dynamics and inner-CV fitness trajectories | `results/bench_convergence.jsonl` |
-| Jaccard selected-subset stability | Measure reproducibility of selected feature subsets across folds and runs | `results/bench_jaccard_stability.jsonl` |
+| Jaccard selected-subset stability | Measure reproducibility of selected feature subsets across folds and runs | `results/bench_jaccard_stability_primary.jsonl` |
 | Embedded baselines | Boundary comparison with LASSO, Elastic Net, and Random Forest feature importance | `results/bench_embedded_baselines.jsonl` |
-| Multimetric endpoint robustness | Check accuracy, balanced accuracy, macro-F1, and weighted-F1 under the same fold-safe wrapper logic | `results/bench_multimetric_robustness_clean.jsonl` |
+| Multimetric endpoint robustness | Check accuracy, balanced accuracy, macro-F1, and weighted-F1 under the same fold-safe wrapper logic | `results/bench_multimetric_robustness_primary.jsonl` |
 | HMRF alpha sensitivity | Evaluate whether the fixed MI/ReliefF mixing weight is a fragile design choice | `results/bench_alpha_sensitivity_merged_5proc.jsonl` |
 
 ### Jaccard stability preview
 
-For 5 monitored datasets, each method produced 25 selected subsets from 5 runs × 5 folds, giving C(25,2)=300 subset pairs per dataset/method.
+Stability is assessed from the primary GA selected subsets across all 15 datasets. Each dataset–configuration pair has 25 subsets from 5 runs × 5 folds, giving C(25,2)=300 subset pairs per dataset/configuration.
 
 | Method | Macro Jaccard stability |
 |--------|------------------------:|
-| Bare-GA | 0.0209 |
-| GAM-λ0 | 0.1184 |
-| GAM λ=0.6 | **0.1273** |
+| Bare-GA | 0.0310 |
+| GAM-λ0 | 0.1594 |
+| GAM λ=0.6 | **0.1816** |
 
-The stability analysis shows that GAM produces substantially more reproducible selected subsets than Bare-GA on the monitored datasets.
+The stability analysis shows that GAM produces substantially more reproducible selected subsets than Bare-GA across the 15-dataset primary benchmark.
 
 ### Multimetric endpoint robustness preview
 
-The wrapper fitness remains inner-CV KNN accuracy, while the additional endpoints are computed only on held-out outer folds.
+Secondary endpoints are computed from the same outer-test predictions as the 15-dataset primary benchmark. The wrapper fitness remains inner-CV KNN accuracy, while balanced accuracy, macro-F1, and weighted-F1 are evaluation endpoints only.
 
-| Metric | Bare-GA | GAM-GA | Δ | W/L/T | Wilcoxon p |
-|--------|--------:|-------:|--:|:-----:|-----------:|
-| Accuracy | 0.7855 | **0.8351** | +0.0496 | 6/1/0 | 0.0313 |
-| Balanced accuracy | 0.7548 | **0.8092** | +0.0544 | 6/1/0 | 0.0469 |
-| Macro-F1 | 0.7343 | **0.7935** | +0.0593 | 6/1/0 | 0.0313 |
-| Weighted-F1 | 0.7675 | **0.8211** | +0.0536 | 6/1/0 | 0.0313 |
+| Metric | Bare | Full GAM | Δ | W/L/T | Wilcoxon p |
+|--------|-----:|---------:|--:|:-----:|-----------:|
+| Accuracy | 0.7706 | **0.8253** | +0.0546 | 15/0/0 | 6.1 × 10⁻⁵ |
+| Balanced accuracy | 0.7251 | **0.7971** | +0.0720 | 15/0/0 | 6.1 × 10⁻⁵ |
+| Macro-F1 | 0.7140 | **0.7869** | +0.0729 | 15/0/0 | 6.1 × 10⁻⁵ |
+| Weighted-F1 | 0.7536 | **0.8118** | +0.0582 | 15/0/0 | 6.1 × 10⁻⁵ |
 
-This analysis supports the manuscript's endpoint-robustness statement: the GAM-GA gain is not limited to raw accuracy. It is reported as supplementary evidence rather than as a replacement for the 15-dataset primary benchmark.
+This analysis reuses the primary predictions: balanced accuracy and macro-F1 gain 7.20 and 7.29 percentage points, confirming the GAM gain is not limited to raw accuracy. It is reported as supplementary evidence rather than as a replacement for the primary benchmark.
 
 ### HMRF alpha sensitivity preview
 
@@ -169,10 +169,10 @@ GAM λ=0.6 retains a clear margin over the embedded baselines (+1.68 pp over Ela
 | E6 Filter baselines | MI, ReliefF, mRMR, and F-score boundary baselines | `bench_foldsafe_filter.jsonl` |
 | E7 Large-dimensional feasibility | Feasibility under high-dimensional limited-budget setting | `bench_foldsafe_large_optimized.jsonl` |
 | E8 Independent wrappers | BGWO/BPSO/GAM-GA comparison | `bench_independent_wrappers.jsonl` |
-| E9 Multimetric endpoint robustness | Accuracy, balanced accuracy, macro-F1, and weighted-F1 | `bench_multimetric_robustness_clean.jsonl` |
+| E9 Multimetric endpoint robustness | Accuracy, balanced accuracy, macro-F1, and weighted-F1 | `bench_multimetric_robustness_primary.jsonl` |
 | E10 HMRF alpha sensitivity | Sensitivity of the MI/ReliefF mixing weight | `bench_alpha_sensitivity_merged_5proc.jsonl` |
 | Supplementary convergence | Search-process behavior | `bench_convergence.jsonl` |
-| Supplementary stability | Selected-subset reproducibility across folds and runs | `bench_jaccard_stability.jsonl` |
+| Supplementary stability | Selected-subset reproducibility across folds and runs | `bench_jaccard_stability_primary.jsonl` |
 | Supplementary embedded baselines | LASSO, Elastic Net, and Random Forest boundary baselines | `bench_embedded_baselines.jsonl` |
 
 ---
@@ -239,10 +239,10 @@ GAM-Feature-Selection/
 │   ├── bench_filter_guided_gam.jsonl
 │   ├── bench_independent_wrappers.jsonl
 │   ├── bench_recent_searchers.jsonl
-│   ├── bench_multimetric_robustness_clean.jsonl
+│   ├── bench_multimetric_robustness_primary.jsonl
 │   ├── bench_phase_breakdown.jsonl
 │   ├── bench_alpha_sensitivity_shard_*_of_5.jsonl
-│   ├── bench_jaccard_stability.jsonl
+│   ├── bench_jaccard_stability_primary.jsonl
 │   └── bench_embedded_baselines.jsonl
 │
 └── utils/
