@@ -3,7 +3,7 @@
 > **A Fold-Safe Plug-and-Play Framework for Wrapper Feature Selection in High-Dimensional Biomedical Data**
 
 
-[![DOI](https://zenodo.org/badge/1293359484.svg)](https://doi.org/10.5281/zenodo.21272539)
+[![DOI](https://zenodo.org/badge/1293359484.svg)](https://doi.org/10.5281/zenodo.23855795)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Status](https://img.shields.io/badge/Status-Submitted-lightgrey)
